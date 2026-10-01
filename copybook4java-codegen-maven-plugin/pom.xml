@@ -212,6 +212,12 @@
             <version>1.0.3</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.openjdk.nashorn</groupId>
+            <artifactId>nashorn-core</artifactId>
+            <version>15.6</version>
+        </dependency>
+
         <!-- maven stuff : https://blog.sagaoftherealms.net/?p=528 , https://github.com/jcabi/jcabi-maven-plugin/blob/master/pom.xml-->
         <dependency>
             <groupId>org.apache.maven</groupId>
