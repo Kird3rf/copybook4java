@@ -1,0 +1,1 @@
+DependingOn{itemCount=2, items=[Item{name="one", qty=1}, Item{name="two", qty=-2}], tagCount=3, tags=["t1", "t2", "t3"]}

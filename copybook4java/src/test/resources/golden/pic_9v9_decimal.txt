@@ -1,0 +1,1 @@
+PicDecimal{s=-12.34, small=1.5, spos=1234.567, u=12.34}

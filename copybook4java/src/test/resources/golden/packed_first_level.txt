@@ -1,0 +1,1 @@
+PackedFirstLevel{args=["do", "stuff"], argsCount=2, command="cmd1234", id=1, item=Item{name="abc", qty=-5}}

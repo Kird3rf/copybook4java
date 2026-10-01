@@ -1,0 +1,1 @@
+Occurs{items=[Item{name="x", qty=-1}, Item{name="yz", qty=42}], nums=[1, 22, 333, 0], tags=["ab", "cdef", null]}

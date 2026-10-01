@@ -1,0 +1,1 @@
+Cp037Strings{dec=987.65, num=1234, symbols="a-Z_0.@$", text="Hello World"}

@@ -62,11 +62,12 @@ public class JavaSyntaxChecker {
         }
     }
 
-    private static class InMemmoryFileManager implements JavaFileManager {
+    private static class InMemmoryFileManager extends ForwardingJavaFileManager<StandardJavaFileManager> {
         private final StandardJavaFileManager fileManager;
         private final Map<String, ByteArrayOutputStream> buffers = new LinkedHashMap<>();
 
         InMemmoryFileManager(StandardJavaFileManager fileManager) {
+            super(fileManager);
             this.fileManager = fileManager;
         }
 

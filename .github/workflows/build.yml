@@ -1,0 +1,29 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Build and test
+        run: mvn -B verify
+
+      - name: Core library targets Java 8 (class file major version 52)
+        run: |
+          javap -v -cp copybook4java/target/classes com.nordea.oss.copybook.CopyBookSerializer | grep -q 'major version: 52'
+
+      - name: Generated sources match golden copy
+        run: |
+          diff -r copybook4java-codegen-maven-test/src/test/golden-generated/mypackage \
+                  copybook4java-codegen-maven-test/target/generated-sources/mypackage
