@@ -1,0 +1,1 @@
+Cp037SignedEbcdicBit5{bi=98765432109, decNeg=-12.34, decPos=56.78, l=-123456789, neg=-1234, pos=1234, zero=0}

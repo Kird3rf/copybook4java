@@ -1,0 +1,1 @@
+LastArrayShort{fields=[-1, 2, -3], fields_count=3, id=7}
